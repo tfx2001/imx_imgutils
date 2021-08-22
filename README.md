@@ -1,6 +1,6 @@
 # imx_generator
 
-A CLI tool to ddd boot data to image for ALIENTEK Alpha i.MX board.
+A CLI tool to add boot data to image for ALIENTEK Alpha i.MX board.
 
 Purely write in Rust.
 
