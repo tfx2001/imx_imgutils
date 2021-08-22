@@ -1,13 +1,18 @@
-use std::{env, error};
+use std::error;
+
+use structopt::StructOpt;
+
+use imx_generator::CLIOpt;
 
 fn main() -> Result<(), Box<dyn error::Error>> {
-    let args: Vec<String> = env::args().collect();
+    let opt = CLIOpt::from_args();
 
-    if args.len() != 3 {
-        Err("Usage: imx_generator <input_filepath> <output_filepath>")?;
-    }
-
-    imx_generator::append_ivt_header(&args[1], &args[2])?;
+    imx_generator::append_ivt_header(
+        opt.input_path,
+        opt.output_path,
+        opt.entry_point,
+        opt.boot_device,
+    )?;
 
     Ok(())
 }
