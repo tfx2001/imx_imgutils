@@ -6,9 +6,9 @@ use std::path::Path;
 
 use crate::boot_data::{AsU8Slice, BootData, BootDevice, DCD_DATA, ImageVectorTable};
 
-pub fn append_ivt_header<P: AsRef<Path>>(
-    input_path: P,
-    output_path: P,
+pub fn append_ivt_header(
+    input_path: &Path,
+    output_path: &Path,
     entry_point: u32,
     boot_device: BootDevice,
 ) -> io::Result<()> {
