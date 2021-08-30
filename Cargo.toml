@@ -1,5 +1,5 @@
 [package]
-name = "imx_generator"
+name = "imx_imgutils"
 description = "A CLI tool to add boot data to image for ALIENTEK Alpha i.MX board."
 version = "0.1.0"
 authors = ["tfx2001 <2479727366@qq.com>"]

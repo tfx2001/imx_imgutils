@@ -1,4 +1,4 @@
-# imx_generator
+# imx_imgutils
 
 A CLI tool to add boot data to image for ALIENTEK Alpha i.MX board.
 
@@ -6,14 +6,20 @@ Purely write in Rust.
 
 ![Board](doc/board.png)
 
+## Install
+
+```shell
+cargo install imx_imgutils
+```
+
 ## Usage
 
 ```shell
-imx_generator 0.1.0
+imx_imgutils 0.1.0
 Add boot data to image for ALIENTEK Alpha i.MX board.
 
 USAGE:
-    imx_generator.exe [OPTIONS] <input> <output>
+    imx_imgutils [OPTIONS] <input> <output>
 
 FLAGS:
     -h, --help       Prints help information

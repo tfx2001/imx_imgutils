@@ -19,7 +19,7 @@ fn parse_boot_device(device: &str) -> Result<BootDevice, &str> {
 
 #[derive(StructOpt, Debug)]
 #[structopt(
-    name = "imx_generator",
+    name = "imx_imgutils",
     about = "Add boot data to image for ALIENTEK Alpha i.MX board."
 )]
 pub struct CliOpt {
