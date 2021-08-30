@@ -22,7 +22,7 @@ fn parse_boot_device(device: &str) -> Result<BootDevice, &str> {
     name = "imx_generator",
     about = "Add boot data to image for ALIENTEK Alpha i.MX board."
 )]
-pub struct CLIOpt {
+pub struct CliOpt {
     #[structopt(name = "input", help = "Path to input file", parse(from_os_str))]
     pub input_path: PathBuf,
     #[structopt(name = "output", help = "Path to output file", parse(from_os_str))]
