@@ -1,7 +1,10 @@
 [package]
 name = "imx_generator"
+description = "A CLI tool to add boot data to image for ALIENTEK Alpha i.MX board."
 version = "0.1.0"
+authors = ["tfx2001 <2479727366@qq.com>"]
 edition = "2018"
+license = "Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
